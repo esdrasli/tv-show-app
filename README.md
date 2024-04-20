@@ -1,46 +1,120 @@
-# Getting Started with Create React App
+# Documentação da Aplicação TV Show
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Visão Geral
+A aplicação TV Show é uma plataforma onde os usuários podem visualizar uma lista de séries de TV e seus detalhes, incluindo informações sobre episódios de cada série. Os usuários também podem acessar detalhes específicos de uma série selecionada.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+### Página Inicial
+- Exibe uma lista de séries de TV.
+- Cada série exibe uma imagem, título e link para acessar os detalhes da série.
 
-### `npm start`
+### Detalhes da Série
+- Mostra detalhes específicos de uma série selecionada, incluindo:
+  - Nome da série
+  - Imagem
+  - Resumo
+  - Ano de lançamento
+  - Gêneros
+- Lista os episódios da série, permitindo ao usuário filtrá-los por temporada.
+- Para cada episódio, exibe:
+  - Nome
+  - Imagem
+  - Resumo
+  - Duração
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Bibliotecas Utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Front-end
+- React.js: Biblioteca JavaScript para criar interfaces de usuário.
+- Material-UI: Uma biblioteca de componentes React para implementar designs visualmente atraentes.
+- React Router: Biblioteca para roteamento na aplicação React.
+- Emotion: Biblioteca para estilização de componentes React com CSS-in-JS.
 
-### `npm test`
+### Testes
+- Jest: Framework de teste de JavaScript.
+- Testing Library: Conjunto de ferramentas para teste de componentes React.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estrutura do Projeto
+A estrutura do projeto segue a seguinte organização:
 
-### `npm run build`
+tv-show-app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+│
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+├── public/ # Arquivos públicos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+├── src/ # Código fonte da aplicação
 
-### `npm run eject`
+│ ├── assets/ # Recursos estáticos (imagens)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+│ ├── components/ # Componentes React
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+│ ├── layout/ # Estilos CSS e layouts
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+│ ├── models/ # Interfaces TypeScript para tipos de dados
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+│ ├── pages/ # Páginas da aplicação
 
-## Learn More
+│ ├── services/ # Serviços para fazer requisições à API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+│ ├── Theme.ts # Definições do tema Material-UI
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+│ ├── App.tsx # Componente principal da aplicação
+
+│ └── ...
+
+├── package.json # Arquivo de configuração do projeto
+
+└── ...
+
+
+## Testes
+Os testes são escritos utilizando Jest e Testing Library. Eles cobrem os serviços de requisição à API e os componentes da aplicação.
+
+## Como Rodar a Aplicação
+Para rodar a aplicação localmente, siga os passos abaixo:
+
+1. Clone o repositório do projeto:
+
+```
+git clone https://github.com/seu-usuario/tv-show-app.git
+```
+
+2. Navegue até o diretório do projeto:
+
+```
+cd tv-show-app
+```
+
+3. Instale as dependências do projeto:
+
+```
+npm install
+```
+
+4. Inicie a aplicação:
+
+```
+npm start
+```
+
+
+5. Abra o navegador e acesse `http://localhost:3000` para visualizar a aplicação.
+
+## Como Rodar os Testes
+Para rodar os testes, execute o seguinte comando no terminal dentro do diretório do projeto:
+
+```
+npm test
+```
+
+
+Isso executará todos os testes e exibirá os resultados no terminal.
+
+## Conclusão
+A aplicação TV Show oferece uma maneira fácil de explorar e obter informações sobre diversas séries de TV. Com uma interface amigável e recursos de filtragem, os usuários podem encontrar facilmente as séries e episódios que desejam assistir.
+
+
+
+
