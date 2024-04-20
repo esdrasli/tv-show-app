@@ -1,0 +1,30 @@
+.card-container {
+    height: 80%;
+}
+
+.card-container:hover .card {
+    transform: scale(1.05);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card-image {
+    max-height: 70%;
+}
+
+.card-title {
+    text-align : center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size  : 18px;
+    color      : #fff;
+}
+
+.card-link {
+    display        : block;
+    text-align     : center;
+    margin-top     : 1%;
+    text-decoration: none;
+}

@@ -1,0 +1,55 @@
+.series-details-container {
+  background-color: #d3c7c7;
+  padding-bottom  : 50%;
+  margin-top: 10%;
+}
+
+.detail-container {
+  background-color: #d3c7c7
+}
+
+.season-number {
+  text-align : center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size  : 18px;
+  color      : #0e0d0d;
+}
+
+.select-style {
+  font-family: Arial, sans-serif;
+  color      : #333;
+  border     : 1px solid #1b1b1b;
+  background-color: #333;
+}
+
+.menu-item-style {
+  font-family: Arial, sans-serif;
+  color      : #333;
+}
+
+.select-style:focus {
+  border-color: #007bff;
+}
+
+.series-details-image {
+  width        : 100%;
+  height       : auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.episode-container {
+  padding: 16px;
+}
+
+.episode-image {
+  width        : 90%;
+  height       : 70%;  
+  margin : 16px;
+  border-radius: 12px;
+}
+
+.episode-card{
+  margin : 6%;
+}
